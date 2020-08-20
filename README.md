@@ -12,7 +12,7 @@ add lat and long to model
 add to the model
 ```
   geocoded_by :address
-  after_validation :geocode, if: :will_save_change_to_address
+  after_validation :geocode, if: :will_save_change_to_address?
 ```
 
 ### 1. Add the gem

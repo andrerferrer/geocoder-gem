@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2020_08_20_162944) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.float "latitude"
-    t.float "logitude"
+    t.float "longitude"
   end
 
   create_table "reviews", force: :cascade do |t|
