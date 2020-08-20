@@ -6,22 +6,31 @@ This is a demo to show-case how to implement .
 
 ## What needs to be done?
 
-add geocoder gem
-add lat and long to model
-
-add to the model
+### 1. Add the gem
+```ruby
+# Gemfile
+gem 'geocoder'
 ```
+
+Remember to `bundle install`.
+
+### 1. Add the latitude and longitude to the model
+
+`rails g migration AddCoordinatesToModel latitude:float longitude:float`
+
+Run the migration
+
+`rails db:migrate`
+
+### 1. Add `geocoder` to the model
+
+```ruby
+  # In the model
   geocoded_by :address
   after_validation :geocode, if: :will_save_change_to_address?
 ```
 
-### 1. Add the gem
-```ruby
-# Gemfile
-gem ''
-```
-
-Remember to `bundle install`
 
 And we're good to go 🤓
+
 Good Luck and Have Fun
