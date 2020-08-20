@@ -14,7 +14,7 @@ gem 'geocoder'
 
 Remember to `bundle install`.
 
-### 1. Add the latitude and longitude to the model
+### 2. Add the latitude and longitude to the model
 
 `rails g migration AddCoordinatesToModel latitude:float longitude:float`
 
@@ -22,7 +22,7 @@ Run the migration
 
 `rails db:migrate`
 
-### 1. Add `geocoder` to the model
+### 3. Add `geocoder` to the model
 
 ```ruby
   # In the model
