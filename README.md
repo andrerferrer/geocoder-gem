@@ -6,6 +6,8 @@ This is a demo to show-case how to implement .
 
 ## What needs to be done?
 
+add geocoder gem
+
 ### 1. Add the gem
 ```ruby
 # Gemfile
